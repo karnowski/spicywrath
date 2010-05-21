@@ -1,6 +1,6 @@
 var SpicyWrath = {
   spicycode: "chad",
-  fireImageUrl: "http://fc09.deviantart.com/fs9/i/2006/061/f/7/animated_fire_by_darkmoon3636.gif",  
+  fireImageUrl: "http://fc09.deviantart.com/fs9/i/2006/061/f/7/animated_fire_by_darkmoon3636.gif",
   
   setupCss: function(){
     $("head").append('\
