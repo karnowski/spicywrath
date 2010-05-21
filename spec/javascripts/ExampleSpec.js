@@ -10,34 +10,26 @@ describe('SpicyWrath', function (){
 
   describe("handleIncomingMessage", function(){
     describe("when the incoming message is NOT from Chad", function(){
-      beforeEach(function(){ 
-        this.event = { user: { name: "larry"} };
-      });
-      
       it("returns true if the incoming message is in all capital letters", function(){
-        this.event.content = "I AM SHOUTING IN ALL CAPITAL LETTERS!"
-        expect(SpicyWrath.handleIncomingMessage(this.event)).toEqual(true);
+        var event = { user: { name: "larry"}, content: "I AM SHOUTING IN ALL CAPITAL LETTERS!" };
+        expect(SpicyWrath.handleIncomingMessage(event)).toEqual(true);
       });
 
       it("returns true if the incoming message is NOT in all capital letters", function(){
-        this.event.content = "This message is NOT in all capital letters."
-        expect(SpicyWrath.handleIncomingMessage(this.event)).toEqual(true);
+        var event = { user: { name: "larry"}, content: "This message is NOT in all capital letters." };
+        expect(SpicyWrath.handleIncomingMessage(event)).toEqual(true);
       });
     });
     
     describe("when the incoming message is from Chad", function(){
-      beforeEach(function(){ 
-        this.event = { user: { name: "chad"} };
-      });
-      
       it("returns false if the incoming message is in all capital letters", function(){
-        this.event.content = "I AM SHOUTING IN ALL CAPITAL LETTERS!"
-        expect(SpicyWrath.handleIncomingMessage(this.event)).toEqual(false);
+        var event = { user: { name: "chad"}, content: "I AM SHOUTING IN ALL CAPITAL LETTERS!" };
+        expect(SpicyWrath.handleIncomingMessage(event)).toEqual(false);
       });
     
       it("returns true if the incoming message is NOT in all capital letters", function(){
-        this.event.content = "This message is NOT in all capital letters."
-        expect(SpicyWrath.handleIncomingMessage(this.event)).toEqual(true);
+        var event = { user: { name: "chad"}, content: "This message is NOT in all capital letters." };
+        expect(SpicyWrath.handleIncomingMessage(event)).toEqual(true);
       });
     });
   });
