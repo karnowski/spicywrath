@@ -1,0 +1,2 @@
+Jasmine:
+	- running "jasmine", "jasmine -h", or "jasmine --help" does not give help; it should
