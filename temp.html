@@ -2,13 +2,21 @@
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <title>temp</title>
+
+  <style type="text/css" media="screen">
+    .spicywrath {font-weight: bold; }
+    .spicywrath img { padding: 0px 2px 0px 2px; }
+  </style>
   
   <script type="text/javascript" src="vendor/jquery-1.4.2.js"></script>
   <script type="text/javascript" src="vendor/jquery.cyclic-fade.js"></script>
   <script type="text/javascript" charset="utf-8">
+    var FIRE_IMAGE_URL = "http://fc09.deviantart.com/fs9/i/2006/061/f/7/animated_fire_by_darkmoon3636.gif"
+  
     $(function(){
       $("#button").click(function(){
-        $("#playground").append('<div class="blink">stuff!</div>');
+        var fireImage = '<img src="' + FIRE_IMAGE_URL + '"/>';
+        $("#playground").append('<div class="spicywrath">' + fireImage + '<span class="blink">stuff!</span>'+ fireImage + '</div>');
         $(".blink").cyclicFade();
       });
     });
