@@ -11,6 +11,8 @@
 #   - dist/**/*.js
 #
 src_files:
+  - vendor/**/*.js
+  - spicywrath.js
 
 # stylesheets
 #

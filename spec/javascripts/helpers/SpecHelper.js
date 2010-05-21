@@ -1,1 +1,7 @@
-//You may load required files here, or create test-runner-wide environment settings.
+function fixture(element) {
+  $('<div id="fixtures"/>').append(element).appendTo("body");
+}
+
+function teardownFixtures() {
+  $("#fixtures").remove();
+}
