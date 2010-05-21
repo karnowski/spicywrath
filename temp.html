@@ -7,11 +7,15 @@
   <script type="text/javascript" src="vendor/jquery.cyclic-fade.js"></script>
   <script type="text/javascript" charset="utf-8">
     $(function(){
-      $(".blink").cyclicFade();
+      $("#button").click(function(){
+        $("#playground").append('<div class="blink">stuff!</div>');
+        $(".blink").cyclicFade();
+      });
     });
   </script>
   
 </head>
 <body>
-  <div class="blink">stuff</div>
+  <button id="button">make stuff</button>
+  <div id="playground"/>
 </body>
