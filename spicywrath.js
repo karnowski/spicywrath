@@ -12,7 +12,10 @@ var SpicyWrath = {
   
   handleIncomingMessage: function(event){
     if(!this.isSpicyEvent(event)) { return true }
-    return !this.isUpperCase(event.content);
+    if(!this.isUpperCase(event.content)) { return true }
+    
+    Talker.insertMessage(event, "something");
+    return false;
   },
   
   isUpperCase: function(string){
