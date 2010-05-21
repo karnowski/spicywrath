@@ -11,7 +11,15 @@ var SpicyWrath = {
   },
   
   handleIncomingMessage: function(event){
-    if(event.user.name != this.spicycode) { return true }
-    return event.content.toUpperCase() != event.content;
+    if(!this.isSpicyEvent(event)) { return true }
+    return !this.isUpperCase(event.content);
+  },
+  
+  isUpperCase: function(string){
+    return string.toUpperCase() == string;
+  },
+  
+  isSpicyEvent: function(event){
+    return event.user.name == this.spicycode;
   }
 };
