@@ -1,5 +1,6 @@
 var SpicyWrath = {
   spicycode: "chad",
+  fireImageUrl: "http://fc09.deviantart.com/fs9/i/2006/061/f/7/animated_fire_by_darkmoon3636.gif",  
   
   setupCss: function(){
     $("head").append('\
@@ -24,5 +25,10 @@ var SpicyWrath = {
   
   isSpicyEvent: function(event){
     return event.user.name == this.spicycode;
+  },
+  
+  spiceUpMessage: function(message){
+    var fireImage = '<img src="' + SpicyWrath.fireImageUrl + '"/>';
+    return '<div class="spicywrath">' + fireImage + '<span>' + message + '</span>'+ fireImage + '</div>';
   }
 };

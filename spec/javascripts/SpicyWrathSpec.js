@@ -48,4 +48,14 @@ describe('SpicyWrath', function (){
     });
   });
   
+  describe("spiceUpMessage", function(){
+    it("wraps the given message in very spicy HTML, indeed", function(){
+      var msg1 = SpicyWrath.spiceUpMessage("my cool message");
+      expect(msg1).toEqual('<div class="spicywrath"><img src="http://fc09.deviantart.com/fs9/i/2006/061/f/7/animated_fire_by_darkmoon3636.gif"/><span>my cool message</span><img src="http://fc09.deviantart.com/fs9/i/2006/061/f/7/animated_fire_by_darkmoon3636.gif"/></div>');
+      
+      var msg2 = SpicyWrath.spiceUpMessage("my other cool message");
+      expect(msg2).toEqual('<div class="spicywrath"><img src="http://fc09.deviantart.com/fs9/i/2006/061/f/7/animated_fire_by_darkmoon3636.gif"/><span>my other cool message</span><img src="http://fc09.deviantart.com/fs9/i/2006/061/f/7/animated_fire_by_darkmoon3636.gif"/></div>');
+    });
+  });
+  
 });
