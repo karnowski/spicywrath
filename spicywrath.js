@@ -15,7 +15,7 @@ var SpicyWrath = {
     if(!this.isSpicyEvent(event)) { return true }
     if(!this.isUpperCase(event.content)) { return true }
     
-    Talker.insertMessage(event, "something");
+    Talker.insertMessage(event, this.spiceUpMessage(event.content));
     return false;
   },
   
@@ -32,3 +32,7 @@ var SpicyWrath = {
     return '<div class="spicywrath">' + fireImage + '<span>' + message + '</span>'+ fireImage + '</div>';
   }
 };
+
+var plugin = plugin || {};
+plugin.onLoaded = function(){ SpicyWrath.setupCss() };
+plugin.onMessageReceived = function(event) { return SpicyWrath.handleIncomingMessage(event) };

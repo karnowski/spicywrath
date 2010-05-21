@@ -41,8 +41,9 @@ describe('SpicyWrath', function (){
         
         it("tells Talker to insert a 'spicier' version of the message", function(){
           spyOn(Talker, 'insertMessage');
+          spyOn(SpicyWrath, 'spiceUpMessage').andReturn("a spicy message");
           SpicyWrath.handleIncomingMessage(this.event);
-          expect(Talker.insertMessage).wasCalledWith(this.event, 'something');
+          expect(Talker.insertMessage).wasCalledWith(this.event, 'a spicy message');
         });
       });
     });

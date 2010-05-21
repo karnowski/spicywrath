@@ -1,2 +1,4 @@
 Jasmine:
 	- running "jasmine", "jasmine -h", or "jasmine --help" does not give help; it should
+	- I shouldn't have to do the "var plugin = plugin || {}" in the core code.
+		- change Jasmine so I can put it in the spec helper
