@@ -1,9 +1,9 @@
 Before the talk:
-* pull up Talker in Firefox as "larry" user
-* pull up Talker in Safari as "larry-relevance" user
-* bring up spicywrath in TextMate
-* bring up spicywrath in console
-* bring up screen shots in preview
+d* pull up Talker in Firefox as "larry" user
+d* pull up Talker in Safari as "larry-relevance" user
+d* bring up spicywrath in TextMate
+d* bring up spicywrath in console
+d* bring up screen shots in preview
 
 Starter:
 * Who is the audience?
@@ -22,3 +22,6 @@ Topics:
 * why test-driven development; questions?
 * does anyone want to add tests to their code live?
 * if not, state the spicywrath problem
+
+
+aparker@icontact.com
