@@ -14,7 +14,9 @@ Starter:
     * any jQuery plugin authors?  (other than Scott Gonzalez)
 * jQuery?  Prototype?  Dojo?  Mootools?  Extjs?
 * Graphic designers?
+* How many of you are already testing your JavaScript?  How about your other code?
 * Why are you wanting to test your JavaScript?
+
 
 Topics:
 * why test-driven development; questions?
