@@ -1,16 +1,34 @@
-Larry Karnowski
-* Relevance, Inc.
+Larry Karnowski, Relevance, Inc.
+* www.thinkrelevance.com
 * larry@thinkrelevance.com
 * Twitter & GitHub: karnowski
 * Sample code: github.com/karnowski/spicywrath
 
+Why Test-Driven Development?
+* ridiculously difficult adding tests afterwards
+* can only black-box test afterwards
+* lose code isolation techniques 
+* emergent design
+* refactor with confidence
+* throw away your debugger
+* communicate your intent
+
+Why Test Drive JavaScript?
+* JavaScript is a real language, why treat it differently?
+* dynamic nature of JavaScript makes it easy to test
+* debugging browser quirks easier with test suite
+* once you get the TDD bug, you can't go back
+
 Testing Tools:
-* Jasmine (BDD, my favorite!)
-	* URL
-* qUnit (old-school, jQuery's favorite)
-	* URL
-* Blue Ridge (Ruby on Rails)
-	* URL
+* Jasmine - BDD-style; my favorite!
+  * github.com/pivotal/jasmine
+  * github.com/pivotal/jasmine-ruby
+* qUnit - old-school xUnit; jQuery's favorite
+  * docs.jquery.com/QUnit
+* Blue Ridge - Ruby on Rails plugin
+  * www.blueridgejs.org
+* JSpec - another BDD-style
+  * visionmedia.github.com/jspec
 
 To install Jasmine specs:
 * gem install jasmine-ruby
@@ -37,9 +55,9 @@ Red, Green, Refactor:
 
 Testing Guidelines:
 * one assertion per test
-* 
-
+* maintain high test coverage (but 100% not required)
+* use plain English descriptions; use client speak
 
 Books to Read:
 * _Test-Driven Development_ by Kent Beck
-* _The RSpec Book_ by David Chelimsky, et. al.
+* _The RSpec Book_ by David Chelimsky, et al.
