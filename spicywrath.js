@@ -28,7 +28,7 @@ var SpicyWrath = {
   },
   
   spiceUpMessage: function(message){
-    var fireImage = '<img src="' + SpicyWrath.fireImageUrl + '"/>';
+    var fireImage = '<img src="' + this.fireImageUrl + '"/>';
     return '<div class="spicywrath">' + fireImage + '<span>' + message + '</span>'+ fireImage + '</div>';
   }
 };
