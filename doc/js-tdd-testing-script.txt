@@ -1,0 +1,22 @@
+Before the talk:
+* pull up Talker in Firefox as "larry" user
+* pull up Talker in Safari as "larry-relevance" user
+* bring up spicywrath in TextMate
+* bring up spicywrath in console
+* bring up screen shots in preview
+
+Starter:
+* Who is the audience?
+  * web developers?
+    * Java?  .NET?  PHP?  Ruby on Rails?
+  * other kinds of devs?  
+    * any node.js or similar devs?
+    * any jQuery plugin authors?  (other than Scott Gonzalez)
+* jQuery?  Prototype?  Dojo?  Mootools?  Extjs?
+* Graphic designers?
+* Why are you wanting to test your JavaScript?
+
+Topics:
+* why test-driven development; questions?
+* does anyone want to add tests to their code live?
+* if not, state the spicywrath problem
