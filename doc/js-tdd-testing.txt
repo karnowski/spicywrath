@@ -1,0 +1,45 @@
+Larry Karnowski
+* Relevance, Inc.
+* larry@thinkrelevance.com
+* Twitter & GitHub: karnowski
+* Sample code: github.com/karnowski/spicywrath
+
+Testing Tools:
+* Jasmine (BDD, my favorite!)
+	* URL
+* qUnit (old-school, jQuery's favorite)
+	* URL
+* Blue Ridge (Ruby on Rails)
+	* URL
+
+To install Jasmine specs:
+* gem install jasmine-ruby
+* cd my-project
+* jasmine init
+* rake jasmine
+* rake jasmine:ci (to run Selenium)
+
+When to Test:
+* logic
+* complicated DOM interaction
+* training wheels
+
+When Not to Test:
+* event wiring
+* declarative code
+* technical spikes
+
+Red, Green, Refactor:
+* write a failing test (start with the assertion)
+* write the simplest code that makes that test pass
+* refactor to remove duplication (if any)
+* repeat
+
+Testing Guidelines:
+* one assertion per test
+* 
+
+
+Books to Read:
+* _Test-Driven Development_ by Kent Beck
+* _The RSpec Book_ by David Chelimsky, et. al.
